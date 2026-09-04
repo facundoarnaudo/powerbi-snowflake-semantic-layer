@@ -18,7 +18,7 @@ This repository separates data engineering scripts, core semantic models, and pr
   * [📄 `03_powerbi_query_folding_proof.sql`](sql_scripts/03_powerbi_query_folding_proof.sql) — SQL captured from Snowflake's query history, proving query folding from Power BI.
 
 * 📁 **`powerbi_semantic_layer`** (Core Data Models — *exported as `.pbit` templates to keep full metadata without repository bloat*)
-  * [📄 `04_PowerBI_Import_Mode.pbit`](powerbi_semantic_layer/04_PowerBI_Import_Mode.pbit) — Initial baseline test using 100% in-memory storage. **Deliberately frozen at its original state** as the record of the experiment that motivated the composite design.
+  * [📄 `04_PowerBI_Import_Mode.pbit`](powerbi_semantic_layer/04_PowerBI_Import_Mode.pbit) — Import-mode baseline over the same corrected source data, kept as the storage-strategy counterfactual that motivated the composite design.
   * [📄 `05_PowerBI_DirectQuery.pbit`](powerbi_semantic_layer/05_PowerBI_DirectQuery.pbit) — **The final core semantic layer**: composite model, gross-to-net measure cascade, time intelligence, and dynamic RLS.
 
 * 📁 **`powerbi_thin_reports`** (Presentation Layer)
